@@ -14,7 +14,9 @@
 <body>
     <header class="site-header">
         <div class="container d-flex site-header-img-site-nav__wrapper">
-            <img src="/img/icon-apple.svg" alt="icon apple" width="35" height="42">
+            <a href="#">
+                <img class="site-logo" src="/img/icon-apple.svg" alt="icon apple" width="35" height="42">
+            </a>
             <div class="site-nav-help__wrapper d-flex">
                 <nav class="site-nav">
                     <ul class="site-nav__lists d-flex">
@@ -32,7 +34,9 @@
                         </li>
                     </ul>
                 </nav>
-                <a class="site-help" href="#">How can we help you?</a>
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                    <input class="search-input" type="search" name="search" id="search" aria-label="search" placeholder="How can we help you?">
+                </form>
             </div>
         </div>
     </header>

@@ -73,6 +73,9 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+.site-logo {
+    display: block;
+}
 .site-nav-help__wrapper {
     align-items: center;
     font-size: 15px;
@@ -102,9 +105,17 @@ a {
     background-color:#000;
     transition: width .5s ease;
 }
-.site-help {
+.search-input {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 0;
     border-bottom: 1px solid #333;
     color: #666;
+}
+.search-input:focus {
+    outline: 0;
 }
 .site-help {
     padding-bottom: 6px;
@@ -284,7 +295,7 @@ only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
+only screen and (                min-resolution: 2dppx) {
     .site-promo {
         background-image: url(/img/red-watch@2x.jpg);
     }
