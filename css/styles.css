@@ -65,8 +65,8 @@ a {
 
 /* HEADER  */
 .site-header {
-    margin-top: 30px;
-    margin-bottom: 79px;
+    padding-top: 30px;
+    padding-bottom: 79px;
 }
 
 .site-header-img-site-nav__wrapper {
@@ -124,7 +124,7 @@ a {
 .site-promo {
     border-bottom: 2px solid #ddd;
     background-image: url(/img/red-watch.jpg);
-    background-position: right center;
+    background-position: left calc(50% + 550px) center;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -207,19 +207,23 @@ a {
                 36px 0px #ddd;
 }
 .article-site__link::before {
-    display: inline-block;
     content: "";
     width: 40px;
     height: 3px;
     margin-right: 10px;
     background-color:var(--brand-color);
-    vertical-align: super;
+    transition: width .4s ease;
 }
 .article-site__link {
+    display: inline-flex;
+    align-items: center;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.6;
     color: var(--brand-color);
+}
+.article-site__link:hover::before {
+    width: 60px;
 }
 
 /* SITE-CTA */
